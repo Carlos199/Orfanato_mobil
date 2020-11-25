@@ -4,6 +4,8 @@ import { ScrollView, Switch, TextInput, TouchableOpacity } from 'react-native-ge
 import { Feather } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
 
+
+
 export default function OrphanageData() {
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: 24 }}>
@@ -39,6 +41,7 @@ export default function OrphanageData() {
       <TextInput
         style={styles.input}
       />
+      <Feather style={styles.imagesInput} name="mic" size={45} color="#dfe453" />
       <View>
         <Text>Atiende fin de semana?</Text>
         <Switch
@@ -86,6 +89,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     marginBottom: 16,
     textAlignVertical: 'top',
+    
   },
 
   imagesInput: {
